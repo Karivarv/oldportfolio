@@ -1,0 +1,56 @@
+main img{
+    width:30vh;
+    height:30vh;
+    border-radius: 50%;
+}
+main{
+    display:grid;
+    grid-template-areas: "one two"
+    "rest1 rest2";
+    grid-gap:10px;
+    padding-top:15vh;
+    justify-content: center;
+}
+.aboutText{
+    width:35vh;
+    text-align:left;
+    grid-area:two;
+}
+.image{
+    width:35vh;
+    grid-area:one;
+}
+main p{
+    padding: 20px 0 0px 20px;
+}
+main h1{
+    padding-top:2vh;
+}
+.rest1{
+    padding-left:50px;
+    grid-area:rest1;
+    width:35vh;
+    text-align:left;
+}
+.rest2{
+    grid-area:rest2;
+    width:35vh;
+    text-align:left;
+}
+@media screen and (max-width:768px){
+    main{
+        display:grid;
+        grid-template-areas: "one one"
+        "two two"
+        "rest1 rest1"
+        "rest2 rest2";
+        grid-gap:10px;
+        justify-content: center;
+    }
+    .rest1{
+        width:100%;
+    }
+    .rest2{
+        width:100%;
+    }
+}

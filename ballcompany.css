@@ -1,0 +1,77 @@
+.container{
+    display:grid;
+    grid-template-areas: "ett två"
+    "tre fyra"
+    "fem fem";
+    justify-content: center;
+   grid-gap: 50px;
+   padding-top:5vh;
+}
+.container img{
+    width:70vh;
+    height:auto;
+}
+.ett{
+    grid-area:ett;
+}
+.två{
+    grid-area:två;
+}
+.tre{
+    grid-area:tre;
+}
+.fyra{
+    grid-area:fyra;
+}
+.fem{
+    grid-area:fem;
+}
+main{
+    padding-top:10px;
+    text-align:center;
+}
+main p,main h1{
+    text-align: left;
+    width:100vh;
+    padding: 1vh 0 0 0;
+    display:block;
+    margin:0 auto;
+}
+main p{
+    padding-left:50px;
+}
+.knapp{
+    padding-top:5px;
+}
+button{
+    color:#fff;
+    background-color:#000;
+    border:none;
+    width:150px;
+    height:25px;
+    cursor: pointer;
+}
+footer{
+    height:10vh;
+    width:100%;
+}
+@media screen and (max-width:1200px){
+    body{
+        padding:0 30px 0 30px;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .container img{
+        width:100%;
+        height:auto;
+    }
+    main p,main h1{
+        text-align: left;
+        width:90%;
+        padding: 1vh 0 0 0;
+        display:block;
+        margin:0 auto;
+    }
+}

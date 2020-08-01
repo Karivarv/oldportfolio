@@ -1,0 +1,83 @@
+main{
+    padding-top:10px;
+    text-align:center;
+}
+.container{
+    display:grid;
+    width:80vh;
+    grid-gap: 15px;
+    margin:0 auto;
+    grid-template-areas: "box1 box2" 
+    "box3 box3";
+}
+.textContainer{
+    display:flex;
+    flex-direction: column;
+}
+.box1{
+    grid-area: box1;
+    width:40vh;
+}
+.box2{
+    grid-area: box2;
+    width:40vh;
+}
+.box3{
+    grid-area: box3;
+    width:82vh;
+    height:auto;
+}
+
+main p,main h1{
+    text-align: left;
+    width:100vh;
+    padding: 1vh 0 0 0;
+    display:block;
+    margin:0 auto;
+}
+main p{
+    padding-left:50px;
+}
+.knapp{
+    padding-top:5px;
+}
+button{
+    color:#fff;
+    background-color:#000;
+    border:none;
+    width:150px;
+    height:25px;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .container{
+        display:grid;
+        width:100%;
+        grid-gap: 15px;
+        justify-content: center;
+        grid-template-areas: "box1 box1" 
+        "box2 box2" 
+        "box3 box3";
+    }
+    .box1{
+        grid-area: box1;
+        width:40vh;
+    }
+    .box2{
+        grid-area: box2;
+        width:40vh;
+    }
+    .box3{
+        grid-area: box3;
+        width:40vh;
+        height:auto;
+    }
+    main p{
+        padding-left:10px;
+        width:450px;
+        padding-bottom:20px;
+    }
+    main h1{
+        padding-left:10px;
+    }
+}
